@@ -10,5 +10,18 @@
 
 	<!-- 配置controller扫描包 -->
 	<context:component-scan base-package="cn.itheima" />
+	
+	<!-- 处理器映射器 -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean> -->
+	<!-- 处理器适配器 -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean> -->
+	
+	<!-- 注解驱动:使用注解驱动取代上面两行代码 -->
+	<mvc:annotation-driven></mvc:annotation-driven>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
 
 </beans>

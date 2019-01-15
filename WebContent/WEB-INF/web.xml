@@ -28,7 +28,7 @@
   		2. *.action *.do   拦截以do action结尾的请求      肯定能使用    ERP
   		3. / 拦截所有（不包括jsp）（包括.js .png .css）   对静态资源放行    强烈建议使用    前台（面向消费）
   	 -->
-  	<url-pattern>*.action</url-pattern>
+  	<url-pattern>/</url-pattern>
   </servlet-mapping>
   
 </web-app>
